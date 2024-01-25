@@ -1,0 +1,100 @@
+<html>
+ 
+<head>
+ 
+ 
+ 
+</head>
+ 
+ 
+<script>
+ 
+    var stringlength = 0;
+    var messsage = "Incorrect Answer";
+    var whatTheyTyped = "";
+    var please = "";
+    function mainButton() {
+        message = "Incorrect Answer";
+        document.getElementById("userInput").innerHTML = message;
+    }
+ 
+    function getLength() {
+        whatTheyTyped = document.getElementById("userInput").value;
+        stringlength = whatTheyTyped.length;
+        document.getElementById("textDisplay").innerHTML = typed;
+ 
+    }
+ 
+    function aBeginning() {
+        document,getElementById("abeg"),innerHTML = aBeginning;
+    } 
+ 
+    function dBeginning() {
+        document.getElementById("dbeg").innerHTML = dBeginning;
+    }
+ 
+    function dEnd() {
+        document.getElementById("dEnding").innerHTML = dEnd;
+    }
+ 
+    function aMiddle() {
+        document.getElementById("midA").innerHTML = aMiddle;
+    }
+ 
+    function dMiddle() {
+        document.getElementById("midD").innerHTML = dMiddle;
+    }
+ 
+    function eMiddle() {
+        document.getElementById("midE").innerHTML = eMiddle;
+    }
+ 
+    function resultText() {
+        document.getElementById("userResults").innerHTML = value;
+        
+    }
+ 
+     
+</script>
+ 
+ 
+ 
+ 
+<body>
+ 
+ 
+    <Input type="text" onkeyup="resultText()">
+    <br>
+    <button onclick="mainButton();">
+        Add to Beginning
+    </button>
+    
+    <button>
+        Add to middle
+    </button>
+    
+    <Button>
+        Add to End
+    </Button>
+    <br>
+    <Button>
+        Delete Beginning
+    </Button>
+  
+    <Button>
+        Delete Middle
+    </Button>
+    
+    <Button>
+        Delete End
+    </Button>
+    <br>
+    <button>
+     LETTER COUNT  
+    </button>
+ 
+    <p id = "userResults">Text Result Here</p>
+ 
+</body>
+ 
+</html>
